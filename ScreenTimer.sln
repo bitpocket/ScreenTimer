@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScreenTimerWeb", "ScreenTim
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScreenTimeClient", "ScreenTimeClient\ScreenTimeClient.csproj", "{DCFBF701-F1C8-4335-AD8A-813010859123}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{F6DD8A85-CFF7-4EFC-B8C0-FE1C41E60022}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{DCFBF701-F1C8-4335-AD8A-813010859123}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DCFBF701-F1C8-4335-AD8A-813010859123}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DCFBF701-F1C8-4335-AD8A-813010859123}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6DD8A85-CFF7-4EFC-B8C0-FE1C41E60022}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6DD8A85-CFF7-4EFC-B8C0-FE1C41E60022}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6DD8A85-CFF7-4EFC-B8C0-FE1C41E60022}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6DD8A85-CFF7-4EFC-B8C0-FE1C41E60022}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
