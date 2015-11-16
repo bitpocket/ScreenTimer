@@ -1,6 +1,6 @@
 ﻿namespace ScreenTimeClient
 {
-	partial class Form1
+	partial class MainForm
 	{
 		/// <summary>
 		/// Required designer variable.
@@ -28,20 +28,34 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+			this.bRegisterTimeChunk = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
-			// Form1
+			// bRegisterTimeChunk
+			// 
+			this.bRegisterTimeChunk.Location = new System.Drawing.Point(12, 12);
+			this.bRegisterTimeChunk.Name = "bRegisterTimeChunk";
+			this.bRegisterTimeChunk.Size = new System.Drawing.Size(156, 23);
+			this.bRegisterTimeChunk.TabIndex = 0;
+			this.bRegisterTimeChunk.Text = "bRegisterTimeChunk";
+			this.bRegisterTimeChunk.UseVisualStyleBackColor = true;
+			this.bRegisterTimeChunk.Click += new System.EventHandler(this.bRegisterTimeChunk_Click);
+			// 
+			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(567, 272);
-			this.Name = "Form1";
-			this.Text = "Form1";
+			this.ClientSize = new System.Drawing.Size(853, 288);
+			this.Controls.Add(this.bRegisterTimeChunk);
+			this.Name = "MainForm";
+			this.Text = "ScreenTimeClient";
 			this.ResumeLayout(false);
 
 		}
 
 		#endregion
+
+		private System.Windows.Forms.Button bRegisterTimeChunk;
 	}
 }
 
