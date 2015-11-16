@@ -29,33 +29,60 @@
 		private void InitializeComponent()
 		{
 			this.bRegisterTimeChunk = new System.Windows.Forms.Button();
+			this.bLogin = new System.Windows.Forms.Button();
+			this.label1 = new System.Windows.Forms.Label();
 			this.SuspendLayout();
 			// 
 			// bRegisterTimeChunk
 			// 
-			this.bRegisterTimeChunk.Location = new System.Drawing.Point(12, 12);
+			this.bRegisterTimeChunk.Location = new System.Drawing.Point(12, 76);
 			this.bRegisterTimeChunk.Name = "bRegisterTimeChunk";
 			this.bRegisterTimeChunk.Size = new System.Drawing.Size(156, 23);
 			this.bRegisterTimeChunk.TabIndex = 0;
-			this.bRegisterTimeChunk.Text = "bRegisterTimeChunk";
+			this.bRegisterTimeChunk.Text = "Register some Time Chunk";
 			this.bRegisterTimeChunk.UseVisualStyleBackColor = true;
 			this.bRegisterTimeChunk.Click += new System.EventHandler(this.bRegisterTimeChunk_Click);
+			// 
+			// bLogin
+			// 
+			this.bLogin.Location = new System.Drawing.Point(12, 47);
+			this.bLogin.Name = "bLogin";
+			this.bLogin.Size = new System.Drawing.Size(156, 23);
+			this.bLogin.TabIndex = 1;
+			this.bLogin.Text = "Login";
+			this.bLogin.UseVisualStyleBackColor = true;
+			this.bLogin.Click += new System.EventHandler(this.bLogin_Click);
+			// 
+			// label1
+			// 
+			this.label1.AutoSize = true;
+			this.label1.Location = new System.Drawing.Point(9, 9);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(63, 13);
+			this.label1.TabIndex = 2;
+			this.label1.Text = "please login";
 			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(853, 288);
+			this.AutoScroll = true;
+			this.ClientSize = new System.Drawing.Size(1031, 1053);
+			this.Controls.Add(this.label1);
+			this.Controls.Add(this.bLogin);
 			this.Controls.Add(this.bRegisterTimeChunk);
 			this.Name = "MainForm";
 			this.Text = "ScreenTimeClient";
 			this.ResumeLayout(false);
+			this.PerformLayout();
 
 		}
 
 		#endregion
 
 		private System.Windows.Forms.Button bRegisterTimeChunk;
+		private System.Windows.Forms.Button bLogin;
+		private System.Windows.Forms.Label label1;
 	}
 }
 

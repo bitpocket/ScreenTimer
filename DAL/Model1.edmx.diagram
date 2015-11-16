@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="3f6359e0b03c4d4caf9f55f0642e16df" Name="Diagram1">
+        <EntityTypeShape EntityType="screentimer_dbModel.AspNetUserLogin" Width="2.375" PointX="4.875" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="screentimer_dbModel.AspNetUser" Width="2.375" PointX="0.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="screentimer_dbModel.Time" Width="2.625" PointX="4" PointY="4.625" IsExpanded="true" />
+        <AssociationConnector Association="screentimer_dbModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="screentimer_dbModel.FK_Times_AspNetUsers" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
