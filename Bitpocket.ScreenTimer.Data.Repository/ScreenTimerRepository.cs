@@ -37,5 +37,14 @@ namespace Bitpocket.ScreenTimer.Test
 			IQueryable<T> result = _context.Set<T>();
 			return result;
 		}
+
+		public void AddTimeChunk<T>(T item) where T : class
+		{
+			var collection = _context.Set<T>();
+
+			collection.Add(item);
+
+			_context.SaveChanges();
+		}
 	}
 }

@@ -35,6 +35,7 @@
 			// 
 			// bRegisterTimeChunk
 			// 
+			this.bRegisterTimeChunk.Enabled = false;
 			this.bRegisterTimeChunk.Location = new System.Drawing.Point(12, 76);
 			this.bRegisterTimeChunk.Name = "bRegisterTimeChunk";
 			this.bRegisterTimeChunk.Size = new System.Drawing.Size(156, 23);
@@ -53,7 +54,7 @@
 			this.bLogin.UseVisualStyleBackColor = true;
 			this.bLogin.Click += new System.EventHandler(this.bLogin_Click);
 			// 
-			// label1
+			// lHello
 			// 
 			this.lHello.AutoSize = true;
 			this.lHello.Location = new System.Drawing.Point(9, 9);
@@ -67,7 +68,7 @@
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.AutoScroll = true;
-			this.ClientSize = new System.Drawing.Size(1031, 1053);
+			this.ClientSize = new System.Drawing.Size(1031, 1045);
 			this.Controls.Add(this.lHello);
 			this.Controls.Add(this.bLogin);
 			this.Controls.Add(this.bRegisterTimeChunk);

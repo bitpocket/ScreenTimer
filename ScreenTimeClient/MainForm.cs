@@ -31,8 +31,18 @@ namespace ScreenTimeClient
 
 		private void bRegisterTimeChunk_Click(object sender, EventArgs e)
 		{
-			DateTime dt1 = DateTime.Now.AddHours(-1);
-			DateTime dt2 = DateTime.Now;
+			if (CurrentUser != null) { 
+				DateTime dt1 = DateTime.Now.AddHours(-1);
+				DateTime dt2 = DateTime.Now;
+
+				Time ts = new Time();
+				ts.Id = Guid.NewGuid().ToString();
+                ts.UserId = CurrentUser.Id;
+				ts.From = DateTime.Now.AddHours(-1);
+				ts.To = DateTime.Now;
+
+				_repository.AddTimeChunk<Time>(ts);
+            }
 		}
 
 		AspNetUser CurrentUser = null;
@@ -48,6 +58,7 @@ namespace ScreenTimeClient
 			if (CurrentUser != null)
 			{
 				this.lHello.Text = string.Format("Hello {0}", CurrentUser.UserName);
+				this.bRegisterTimeChunk.Enabled = true;
 			}
 		}
 	}

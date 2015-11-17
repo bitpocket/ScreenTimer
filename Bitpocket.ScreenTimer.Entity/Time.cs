@@ -14,7 +14,7 @@ namespace Bitpocket.ScreenTimer.Entity
     
     public partial class Time
     {
-        public int Id { get; set; }
+        public string Id { get; set; }
         public System.DateTime From { get; set; }
         public System.DateTime To { get; set; }
         public string UserId { get; set; }

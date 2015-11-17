@@ -10,7 +10,7 @@
         <EntityTypeShape EntityType="Bitpocket.ScreenTimer.Data.Repository.AspNetUserClaim" Width="1.5" PointX="5.25" PointY="1.125" IsExpanded="true" />
         <EntityTypeShape EntityType="Bitpocket.ScreenTimer.Data.Repository.AspNetUserLogin" Width="1.5" PointX="5.25" PointY="3.875" IsExpanded="true" />
         <EntityTypeShape EntityType="Bitpocket.ScreenTimer.Data.Repository.AspNetUser" Width="1.5" PointX="3" PointY="2.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="Bitpocket.ScreenTimer.Data.Repository.Time" Width="1.5" PointX="5.25" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Bitpocket.ScreenTimer.Data.Repository.Time" Width="1.5" PointX="6.375" PointY="7" IsExpanded="true" />
         <AssociationConnector Association="Bitpocket.ScreenTimer.Data.Repository.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
         <AssociationConnector Association="Bitpocket.ScreenTimer.Data.Repository.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
         <AssociationConnector Association="Bitpocket.ScreenTimer.Data.Repository.FK_Times_AspNetUsers" ManuallyRouted="false" />
