@@ -7,13 +7,17 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScreenTimerWeb", "ScreenTim
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScreenTimeClient", "ScreenTimeClient\ScreenTimeClient.csproj", "{DCFBF701-F1C8-4335-AD8A-813010859123}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{F6DD8A85-CFF7-4EFC-B8C0-FE1C41E60022}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bitpocket.ScreenTimer.Test", "Bitpocket.ScreenTimer.Test\Bitpocket.ScreenTimer.Test.csproj", "{58F9C102-058E-4C3D-AC70-6DAB2F1F7D5C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bitpocket.ScreenTimer.Data.Repository", "Bitpocket.ScreenTimer.Data.Repository\Bitpocket.ScreenTimer.Data.Repository.csproj", "{E5573ED2-F64D-4359-B5E6-EE8FFECCC3BD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bitpocket.ScreenTimer.Data", "Bitpocket.ScreenTimer.Data\Bitpocket.ScreenTimer.Data.csproj", "{12AD5116-5480-446E-8ADC-BC5E7652927D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{B7339EF8-18C1-447E-9AD1-0D830F6A85D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bitpocket.ScreenTimer.Entity", "Bitpocket.ScreenTimer.Entity\Bitpocket.ScreenTimer.Entity.csproj", "{54E5B4C7-45AD-4715-9C64-B8A2B00658A8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{82650372-1BA6-4E33-A526-14769EC3CEFF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +33,6 @@ Global
 		{DCFBF701-F1C8-4335-AD8A-813010859123}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DCFBF701-F1C8-4335-AD8A-813010859123}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DCFBF701-F1C8-4335-AD8A-813010859123}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F6DD8A85-CFF7-4EFC-B8C0-FE1C41E60022}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F6DD8A85-CFF7-4EFC-B8C0-FE1C41E60022}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F6DD8A85-CFF7-4EFC-B8C0-FE1C41E60022}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F6DD8A85-CFF7-4EFC-B8C0-FE1C41E60022}.Release|Any CPU.Build.0 = Release|Any CPU
 		{58F9C102-058E-4C3D-AC70-6DAB2F1F7D5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{58F9C102-058E-4C3D-AC70-6DAB2F1F7D5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{58F9C102-058E-4C3D-AC70-6DAB2F1F7D5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -45,8 +45,17 @@ Global
 		{12AD5116-5480-446E-8ADC-BC5E7652927D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{12AD5116-5480-446E-8ADC-BC5E7652927D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{12AD5116-5480-446E-8ADC-BC5E7652927D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54E5B4C7-45AD-4715-9C64-B8A2B00658A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54E5B4C7-45AD-4715-9C64-B8A2B00658A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54E5B4C7-45AD-4715-9C64-B8A2B00658A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54E5B4C7-45AD-4715-9C64-B8A2B00658A8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E5573ED2-F64D-4359-B5E6-EE8FFECCC3BD} = {B7339EF8-18C1-447E-9AD1-0D830F6A85D6}
+		{12AD5116-5480-446E-8ADC-BC5E7652927D} = {B7339EF8-18C1-447E-9AD1-0D830F6A85D6}
+		{54E5B4C7-45AD-4715-9C64-B8A2B00658A8} = {82650372-1BA6-4E33-A526-14769EC3CEFF}
 	EndGlobalSection
 EndGlobal

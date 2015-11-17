@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace Bitpocket.ScreenTimer.Test
+namespace UnitTestProject1
 {
 	[TestClass]
 	public class UnitTest1

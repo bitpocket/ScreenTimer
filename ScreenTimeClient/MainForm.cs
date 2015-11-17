@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Bitpocket.ScreenTimer.Data;
+using Bitpocket.ScreenTimer.Entity;
+using Bitpocket.ScreenTimer.Test;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,9 +19,15 @@ namespace ScreenTimeClient
 		public MainForm()
 		{
 			InitializeComponent();
+			Initialize();
 		}
 
-		//screentimer_dbEntities db = new screentimer_dbEntities();
+		private IRepository _repository;
+
+		public void Initialize()
+		{
+			_repository = new ScreenTimerRepository();
+		}
 
 		private void bRegisterTimeChunk_Click(object sender, EventArgs e)
 		{
@@ -26,23 +35,20 @@ namespace ScreenTimeClient
 			DateTime dt2 = DateTime.Now;
 		}
 
-		//AspNetUser CurrentUser = null;
+		AspNetUser CurrentUser = null;
+
 
 		private void bLogin_Click(object sender, EventArgs e)
 		{
-			//this.aspNetUserBindingSource.DataSource = db.AspNetUsers;
+			string name = "a@b.c";
 
-			//string user = "screentimer_db1";
-			//string pass = "qwQW12!@";
-			string email = "a@b.c";
+			CurrentUser = _repository.AllIncluding<AspNetUser>()
+				.First<AspNetUser>(x => x.UserName == name);
 
-			//AspNetUser user = DB.GetUser(email);
-
-			//if (user != null)
-			//{
-
-			//}
-
+			if (CurrentUser != null)
+			{
+				this.lHello.Text = string.Format("Hello {0}", CurrentUser.UserName);
+			}
 		}
 	}
 }

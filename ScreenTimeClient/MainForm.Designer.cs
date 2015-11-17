@@ -30,7 +30,7 @@
 		{
 			this.bRegisterTimeChunk = new System.Windows.Forms.Button();
 			this.bLogin = new System.Windows.Forms.Button();
-			this.label1 = new System.Windows.Forms.Label();
+			this.lHello = new System.Windows.Forms.Label();
 			this.SuspendLayout();
 			// 
 			// bRegisterTimeChunk
@@ -55,12 +55,12 @@
 			// 
 			// label1
 			// 
-			this.label1.AutoSize = true;
-			this.label1.Location = new System.Drawing.Point(9, 9);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(63, 13);
-			this.label1.TabIndex = 2;
-			this.label1.Text = "please login";
+			this.lHello.AutoSize = true;
+			this.lHello.Location = new System.Drawing.Point(9, 9);
+			this.lHello.Name = "lHello";
+			this.lHello.Size = new System.Drawing.Size(63, 13);
+			this.lHello.TabIndex = 2;
+			this.lHello.Text = "please login";
 			// 
 			// MainForm
 			// 
@@ -68,7 +68,7 @@
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.AutoScroll = true;
 			this.ClientSize = new System.Drawing.Size(1031, 1053);
-			this.Controls.Add(this.label1);
+			this.Controls.Add(this.lHello);
 			this.Controls.Add(this.bLogin);
 			this.Controls.Add(this.bRegisterTimeChunk);
 			this.Name = "MainForm";
@@ -82,7 +82,7 @@
 
 		private System.Windows.Forms.Button bRegisterTimeChunk;
 		private System.Windows.Forms.Button bLogin;
-		private System.Windows.Forms.Label label1;
+		private System.Windows.Forms.Label lHello;
 	}
 }
 
